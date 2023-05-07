@@ -1,0 +1,151 @@
+html{
+    font-size:61.5%;
+	overflow-x: hidden;
+}
+
+.navbar{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    background-color: #b25ddf;
+    justify-content: space-around;
+    border: 2px solid #fafcfa;
+    box-shadow: 6px 5px white;
+    margin-top: -13px;
+    border-radius: 5px;
+    /* background: transparent; */
+}
+
+.logo {
+    margin-top: 11px;
+    font-size: 23px;
+    color: whitesmoke;
+}
+
+.logo img{
+  width:89px;
+}
+
+   ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+
+li {
+    padding: 25px;
+    font-size: 20px;
+    margin-top: -8px;
+}
+
+a{
+    font-size: 26px;
+    text-decoration: none;
+  color: #f9fbe7;
+    
+}
+a:hover{
+   color: #ffc107;
+}
+ 
+
+.click{
+    background-color: aliceblue;
+}
+
+
+.mobile-navbar-btn1{
+    background:transparent;
+    cursor:pointer;
+  visibility: hidden;
+}
+
+.mobile-navbar-btn1 img{
+   
+    width: 37px;
+    margin-top: 22px;
+}
+
+
+
+
+@media(max-width:980px) {
+.mobile-navbar-btn1{
+  margin-right:13px;
+    background:transparent;
+    cursor:pointer;
+  visibility:visible;
+}
+    nav{
+        padding: 0%; 
+        display: flex;
+        width:225px;
+        height:100%;
+        border: 2px solid whitesmoke;
+        background-color: black;
+        position:fixed;
+        top:0;
+        right:-100%;
+        left:0;
+        align-items: center;
+        justify-content: center;
+        gap:1.5rem;
+        transition: 1s;
+        transform: translateX(-100vh);
+
+    } 
+  .logo {
+    margin-left: 38px;
+    margin-top: 13px;
+    font-size: 30px;
+}
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }  
+
+    .navbar .responsive_nav{
+        transform: none;
+    }
+
+ .navbar li {
+    padding: 19px;
+}
+.navbar{
+  justify-content:space-between;
+}
+.navbar a{
+    display: block;
+    font-size: 24px;
+    padding:0px;
+    transform: all .50s ease;
+}
+
+.navbar a:hover{
+    color:white;
+    transform: translateY(6px);
+    border-radius: 5px;
+}
+
+.navbar a.active{
+   color:var(--text-color);
+}
+
+}
+
+
+@media(max-width:675px) {
+    .mobile-navbar-btn2 {
+        margin-right: -45px;
+    }
+}
+
+@media(max-width:500px) {
+    .mobile-navbar-btn2 {
+        margin-right: -5px;
+    }
+}
+
